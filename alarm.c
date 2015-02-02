@@ -1,4 +1,6 @@
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 const int HOUR_TO_MIN = 60;
 const int MIN_TO_SEC = 60;
