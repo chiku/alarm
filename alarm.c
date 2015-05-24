@@ -8,7 +8,7 @@ const int HOUR_TO_SEC = 3600;
 
 int main(int argc, char **argv)
 {
-    int duration_in_sec = (argc > 1) ? atoi(argv[1]) : (MIN_TO_SEC * 7);
+    int duration_in_sec = ((argc > 1) ? atoi(argv[1]) :  7) * HOUR_TO_SEC;
 
     for (int remaining_time_time_in_sec = duration_in_sec; remaining_time_time_in_sec >= 0; remaining_time_time_in_sec -= MIN_TO_SEC) {
         int h = (remaining_time_time_in_sec / HOUR_TO_SEC);
